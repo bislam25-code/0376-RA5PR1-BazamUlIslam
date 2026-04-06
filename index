@@ -10,7 +10,7 @@ if ($numero < 1 || $numero > 12) {
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Taula</title>
+    <title>Taula de multiplicar</title>
     <style>
         table {
             border-collapse: collapse;
@@ -32,28 +32,27 @@ if ($numero < 1 || $numero > 12) {
     </style>
 </head>
 <body>
-    <h1>Taula de multiplicar</h1>
+    <h1>Taula de multiplicar del <?php echo $numero; ?> </h1>
 
     <table>
-        <table>
-            <?php
-            for ($i = 1; $i <= 10; $i++) {
-            echo "<tr>";
-            echo "<td>$numero x $i = " . ($numero * $i) . "</td>";
+       <?php
+        for ($i = 1; $i <= 10; $i++) {
+
+            if ($i % 2 == 0) {
+                $classe = "parell";
+            } else {
+                $classe = "senar";
+            }
+
+            echo "<tr class='" . $classe . "'>";
+                echo "<td>$numero</td>";
+                echo "<td>x</td>";
+                echo "<td>$i</td>";
+                echo "<td>=</td>";
+                echo "<td>" . ($numero * $i) . "</td>";
             echo "</tr>";
         }
-        ?>
+        ?> 
 </table>
-</table>
-    <p></p>
-    <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-    </ul>
-
-    <h1>
-     
-    </h1>
 </body>
 </html>
