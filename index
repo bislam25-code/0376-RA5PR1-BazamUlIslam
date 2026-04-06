@@ -1,10 +1,10 @@
 <html>
 <head>
-    <title>My First Web Page</title>
+    <title>Taula</title>
 </head>
 <body>
-    <h1>Welcome to My Web Page</h1>
-    <p>This is a simple web page created as an example.</p>
+    <h1>Taula de multiplicar</h1>
+    <p></p>
     <ul>
         <li>Item 1</li>
         <li>Item 2</li>
@@ -12,7 +12,7 @@
     </ul>
 
     <h1>
-     BAZAM estupido
+     
     </h1>
 </body>
 </html>
